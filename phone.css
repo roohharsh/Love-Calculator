@@ -1,0 +1,33 @@
+#home{
+    width: 284%;
+    height: 164px;
+    text-align: center;
+}
+
+.text{
+    width: 200%;
+    margin-left: 127px;
+}
+.heading{
+    font-size: 65px;
+}
+.part1, .part2, .part3{
+    font-size: 30px;
+}
+
+.form{
+    width: 500%;
+}
+
+.percent{
+    margin-left: 170px;
+    width: 180%;
+    text-align: center;
+}
+
+footer{
+    width: 263%;
+}
+.center{
+    font-size: 32px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="phone.css">
+</head>
+<body>
+    <div id="home">
+        <div class="top">♥LOVE-CALCULATOR♥</div>
+    </div>
+    
+        <div class="text">
+            <div class="heading">Welcome to this great invention of Harsh!</div>
+            <div class="part1">We all know that a name can tell a lot about a person. Names are not randomly chosen: they all have a meaning. Harsh knew this so he made another great invention just for the lonely you!</div>
+            <div class="part2">Sometimes you'd like to know if a relationship with someone could work out. Therefore Harsh himself designed this great machine for you. With The Love Calculator you can calculate the probability of a successful relationship between two people. The Love Calculator is an affective way to get an impression of what the chances are on a relationship between two people.</div>
+            <div class="part3">To find out what the chances for you and your dream partner are, just fill in both full names (both first and last name) in the two text boxes below, and press Calculate.</div>
+        </div>
+    
+    <div class="form">
+        <div class="row row--justify-content-between">
+          <div class="form-group1">
+            <input type="text" name="name1" id="name1" value="" size="25" autofocus placeholder="Your full name" required>
+          </div>
+          <div class="form-group2">
+            <input type="text" name="name2" id="name2" value="" size="25" placeholder="Your crush name" required>
+          </div>
+        </div>
+        <div class="row row--justify-content-center">
+          <div class="form-group form-group--color">
+            <button class="btn btn--primary" id="btn" type="submit">Calculate love</button>
+          </div>
+        </div>
+        <img class="form__image" src="Heart.png" alt="LOVES">
+    </div>
+    
+    <div class="percent">
+        <div id="percentage">0%</div>
+        <p id="statement">Best Couples</p>
+    </div>
+    
+    <footer>
+        <div class="center">
+                Copyright &copy; Created by Harsh Singhal | All right reserved! 
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
