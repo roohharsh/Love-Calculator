@@ -10,20 +10,41 @@ button.addEventListener("click", () => {
     var name2 = document.getElementById("name2").value;
     name2 = name2.toLowerCase();
 
-    if ((name1 == "harsh" && name2 != "yogita") ||
-        (name2 == "harsh" && name1 != "yogita") ||
-        (name1 != "harsh" && name2 == "yogita") ||
-        (name2 != "harsh" && name1 == "yogita")) {
-        var x = 0;
+    let me = ["harsh", "chotu", "chingu", "kumbhkaran", "babii", "harshu"];
+    let you = ["yogita", "yanchi", "yaanchi", "yogi", "chingi","gadhi", "babii",
+     "bhutni", "moti", "gubbara", "pagal", "chuhuiya", "bhaish"];
+
+    let check1=0;
+    let check2=0;
+
+    for(let i=0;i<me.length;i++){
+        if(name1===me[i]){
+            check1=1;
+        }
+    }
+    for(let i=0;i<you.length;i++){
+        if(name1===you[i]){
+            check1=2;
+        }
+    }
+    for(let i=0;i<me.length;i++){
+        if(name2===me[i]){
+            check2=1;
+        }
+    }
+    for(let i=0;i<you.length;i++){
+        if(name2===you[i]){
+            check2=2;
+        }
     }
 
-    else if (name1 == "harsh" || name1 == "yogita" || name1 == "harshu" ||
-        name1 == "chingu" || name1 == "kumbhkaran" || name1 == "yaanchi" ||
-        name1 == "yanchi" || name1 == "chinki" || name1 == "yogi" ||
-        name1 == "yaanu" || name1 == "bhutni" || name1 == "chotu")
+    if((check1==1 && check2==2) || (check1==2 && check2==1)){
         var x = 100;
-
-    else {
+    }
+    else if((check1==1 && check2!=2) || (check1==2 && check2!=1) || (check2==1 && check1!=2) || (check2==2 && check1!=1)){
+        var x = 0;
+    }
+    else{
         var x = Math.random() * 100;
         x = Math.floor(x);
         x++;
