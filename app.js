@@ -66,4 +66,13 @@ button.addEventListener("click", () => {
     if (x < 20) {
         document.getElementById("statement").innerHTML = "Tumse na ho payega";
     }
+
+// to cleaning the stuffs
+    var field=document.querySelectorAll('.name1'+','+'.name2');
+    fieldArray=Array.prototype.slice.call(field);
+    fieldArray.forEach(function(cur,index,array){
+        cur.value= "";
+    });
+
+    fieldArray[0].focus();
 })
